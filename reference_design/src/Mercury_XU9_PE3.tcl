@@ -1,5 +1,5 @@
-# ----------------------------------------------------------------------------------
-# Copyright (c) 2022 by Enclustra GmbH, Switzerland.
+# ----------------------------------------------------------------------------------------------------
+# Copyright (c) 2024 by Enclustra GmbH, Switzerland.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this hardware, software, firmware, and associated documentation files (the
@@ -17,7 +17,7 @@
 # HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # PRODUCT OR THE USE OR OTHER DEALINGS IN THE PRODUCT.
-# ----------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------
 
 set_property BITSTREAM.CONFIG.OVERTEMPSHUTDOWN ENABLE [current_design]
  
@@ -121,6 +121,110 @@ set_property -dict {PACKAGE_PIN K14   IOSTANDARD LVCMOS18  } [get_ports {I2C_USE
 
 # LED
 set_property -dict {PACKAGE_PIN AF13  IOSTANDARD LVCMOS12  } [get_ports {PL_LED2_N}]
+
+# MGT Group 1
+# set_property PACKAGE_PIN D6    [get_ports {MGT_TX4_P}] # GTH
+# set_property PACKAGE_PIN D5    [get_ports {MGT_TX4_N}] # GTH
+# set_property PACKAGE_PIN C8    [get_ports {MGT_TX5_P}] # GTH
+# set_property PACKAGE_PIN C7    [get_ports {MGT_TX5_N}] # GTH
+# set_property PACKAGE_PIN B6    [get_ports {MGT_TX6_P}] # GTH
+# set_property PACKAGE_PIN B5    [get_ports {MGT_TX6_N}] # GTH
+# set_property PACKAGE_PIN A8    [get_ports {MGT_TX7_P}] # GTH
+# set_property PACKAGE_PIN A7    [get_ports {MGT_TX7_N}] # GTH
+# set_property PACKAGE_PIN D2    [get_ports {MGT_RX4_P}] # GTH
+# set_property PACKAGE_PIN D1    [get_ports {MGT_RX4_N}] # GTH
+# set_property PACKAGE_PIN C4    [get_ports {MGT_RX5_P}] # GTH
+# set_property PACKAGE_PIN C3    [get_ports {MGT_RX5_N}] # GTH
+# set_property PACKAGE_PIN B2    [get_ports {MGT_RX6_P}] # GTH
+# set_property PACKAGE_PIN B1    [get_ports {MGT_RX6_N}] # GTH
+# set_property PACKAGE_PIN A4    [get_ports {MGT_RX7_P}] # GTH
+# set_property PACKAGE_PIN A3    [get_ports {MGT_RX7_N}] # GTH
+
+# MGT Group 2
+# set_property PACKAGE_PIN H6    [get_ports {MGT_TX8_P}] # GTH
+# set_property PACKAGE_PIN H5    [get_ports {MGT_TX8_N}] # GTH
+# set_property PACKAGE_PIN G8    [get_ports {MGT_TX9_P}] # GTH
+# set_property PACKAGE_PIN G7    [get_ports {MGT_TX9_N}] # GTH
+# set_property PACKAGE_PIN F6    [get_ports {MGT_TX10_P}] # GTH
+# set_property PACKAGE_PIN F5    [get_ports {MGT_TX10_N}] # GTH
+# set_property PACKAGE_PIN E8    [get_ports {MGT_TX11_P}] # GTH
+# set_property PACKAGE_PIN E7    [get_ports {MGT_TX11_N}] # GTH
+# set_property PACKAGE_PIN H2    [get_ports {MGT_RX8_P}] # GTH
+# set_property PACKAGE_PIN H1    [get_ports {MGT_RX8_N}] # GTH
+# set_property PACKAGE_PIN G4    [get_ports {MGT_RX9_P}] # GTH
+# set_property PACKAGE_PIN G3    [get_ports {MGT_RX9_N}] # GTH
+# set_property PACKAGE_PIN F2    [get_ports {MGT_RX10_P}] # GTH
+# set_property PACKAGE_PIN F1    [get_ports {MGT_RX10_N}] # GTH
+# set_property PACKAGE_PIN E4    [get_ports {MGT_RX11_P}] # GTH
+# set_property PACKAGE_PIN E3    [get_ports {MGT_RX11_N}] # GTH
+
+# MGT Group 3
+# set_property PACKAGE_PIN P6    [get_ports {MGT_TX12_P}] # GTH
+# set_property PACKAGE_PIN P5    [get_ports {MGT_TX12_N}] # GTH
+# set_property PACKAGE_PIN M6    [get_ports {MGT_TX13_P}] # GTH
+# set_property PACKAGE_PIN M5    [get_ports {MGT_TX13_N}] # GTH
+# set_property PACKAGE_PIN L4    [get_ports {MGT_TX14_P}] # GTH
+# set_property PACKAGE_PIN L3    [get_ports {MGT_TX14_N}] # GTH
+# set_property PACKAGE_PIN K6    [get_ports {MGT_TX15_P}] # GTH
+# set_property PACKAGE_PIN K5    [get_ports {MGT_TX15_N}] # GTH
+# set_property PACKAGE_PIN N4    [get_ports {MGT_RX12_P}] # GTH
+# set_property PACKAGE_PIN N3    [get_ports {MGT_RX12_N}] # GTH
+# set_property PACKAGE_PIN M2    [get_ports {MGT_RX13_P}] # GTH
+# set_property PACKAGE_PIN M1    [get_ports {MGT_RX13_N}] # GTH
+# set_property PACKAGE_PIN K2    [get_ports {MGT_RX14_P}] # GTH
+# set_property PACKAGE_PIN K1    [get_ports {MGT_RX14_N}] # GTH
+# set_property PACKAGE_PIN J4    [get_ports {MGT_RX15_P}] # GTH
+# set_property PACKAGE_PIN J3    [get_ports {MGT_RX15_N}] # GTH
+
+# MGT Group 4
+# set_property PACKAGE_PIN W4    [get_ports {MGT_TX16_P}] # GTH
+# set_property PACKAGE_PIN W3    [get_ports {MGT_TX16_N}] # GTH
+# set_property PACKAGE_PIN V6    [get_ports {MGT_TX17_P}] # GTH
+# set_property PACKAGE_PIN V5    [get_ports {MGT_TX17_N}] # GTH
+# set_property PACKAGE_PIN T6    [get_ports {MGT_TX18_P}] # GTH
+# set_property PACKAGE_PIN T5    [get_ports {MGT_TX18_N}] # GTH
+# set_property PACKAGE_PIN R4    [get_ports {MGT_TX19_P}] # GTH
+# set_property PACKAGE_PIN R3    [get_ports {MGT_TX19_N}] # GTH
+# set_property PACKAGE_PIN V2    [get_ports {MGT_RX16_P}] # GTH
+# set_property PACKAGE_PIN V1    [get_ports {MGT_RX16_N}] # GTH
+# set_property PACKAGE_PIN U4    [get_ports {MGT_RX17_P}] # GTH
+# set_property PACKAGE_PIN U3    [get_ports {MGT_RX17_N}] # GTH
+# set_property PACKAGE_PIN T2    [get_ports {MGT_RX18_P}] # GTH
+# set_property PACKAGE_PIN T1    [get_ports {MGT_RX18_N}] # GTH
+# set_property PACKAGE_PIN P2    [get_ports {MGT_RX19_P}] # GTH
+# set_property PACKAGE_PIN P1    [get_ports {MGT_RX19_N}] # GTH
+
+# Clock Generator MGT RefClk2
+# set_property PACKAGE_PIN B9    [get_ports {MGT_REFCLK2_N}] # GTH
+# set_property PACKAGE_PIN B10   [get_ports {MGT_REFCLK2_P}] # GTH
+
+# Clock Generator MGT RefClk3
+# set_property PACKAGE_PIN D9    [get_ports {MGT_REFCLK3_N}] # GTH
+# set_property PACKAGE_PIN D10   [get_ports {MGT_REFCLK3_P}] # GTH
+
+# Clock Generator MGT RefClk4
+# set_property PACKAGE_PIN H9    [get_ports {MGT_REFCLK4_N}] # GTH
+# set_property PACKAGE_PIN H10   [get_ports {MGT_REFCLK4_P}] # GTH
+
+# Clock Generator MGT RefClk5
+# set_property PACKAGE_PIN F9    [get_ports {MGT_REFCLK5_N}] # GTH
+# set_property PACKAGE_PIN F10   [get_ports {MGT_REFCLK5_P}] # GTH
+
+# Clock Generator MGT RefClk6
+# set_property PACKAGE_PIN J7    [get_ports {MGT_REFCLK6_N}] # GTH
+# set_property PACKAGE_PIN J8    [get_ports {MGT_REFCLK6_P}] # GTH
+
+# Clock Generator MGT RefClk7
+# set_property PACKAGE_PIN L7    [get_ports {MGT_REFCLK7_N}] # GTH
+# set_property PACKAGE_PIN L8    [get_ports {MGT_REFCLK7_P}] # GTH
+
+# Clock Generator MGT RefClk8
+# set_property PACKAGE_PIN N7    [get_ports {MGT_REFCLK8_N}] # GTH
+# set_property PACKAGE_PIN N8    [get_ports {MGT_REFCLK8_P}] # GTH
+
+# Clock Generator MGT RefClk9
+# set_property PACKAGE_PIN R7    [get_ports {MGT_REFCLK9_N}] # GTH
+# set_property PACKAGE_PIN R8    [get_ports {MGT_REFCLK9_P}] # GTH
 
 # Oscillator 100 MHz
 set_property -dict {PACKAGE_PIN K11   IOSTANDARD LVCMOS18  } [get_ports {CALIB_CLK}]
